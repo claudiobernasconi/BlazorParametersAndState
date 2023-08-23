@@ -1,0 +1,10 @@
+﻿<h2>Car</h2>
+<p>Engine Temperature: @EngineTemp</p>
+
+<CascadingValue Value="EngineMode.Sport">
+    <Engine @bind-Temperature="EngineTemp" />
+</CascadingValue>
+
+@code {
+    public int EngineTemp { get; set; } = 16;
+}
